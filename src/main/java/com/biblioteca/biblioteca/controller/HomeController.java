@@ -1,0 +1,10 @@
+package com.biblioteca.biblioteca.controller;
+
+@Controller
+public class HomeController {
+
+    @GetMapping("/")
+    public String home() {
+        return "index";
+    }
+}
