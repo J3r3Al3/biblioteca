@@ -37,14 +37,16 @@ public class LibroServiceImpl implements LibroService {
     @Override
     public Libro actualizar(Long id, Libro libro) {
         Libro existente = buscarPorId(id);
-
+        
         existente.setTitulo(libro.getTitulo());
         existente.setAutor(libro.getAutor());
         existente.setIsbn(libro.getIsbn());
         existente.setAnioPublicacion(libro.getAnioPublicacion());
-
+        
         return libroRepository.save(existente);
+    
     }
+
 
 
 
