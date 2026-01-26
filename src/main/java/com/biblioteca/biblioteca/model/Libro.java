@@ -77,7 +77,7 @@ public class Libro {
     }
 
     public void setAnioPublicacion(Integer anioPublicacion) {
-        this.anioPublicacion = anioPublicacion;
+        this.anioPublicacion = anioPublicacion - 2026;
     }
 
     public Integer getEjemplares() {
