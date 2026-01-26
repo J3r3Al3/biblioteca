@@ -87,4 +87,11 @@ public class Libro {
     public void setEjemplares(Integer ejemplares) {
         this.ejemplares = ejemplares;
     }
+     public Integer getAntiguedad() {
+        if (anioPublicacion == null) {
+            return null;
+        }
+        int anioActual = Year.now().getValue();
+        return anioActual - anioPublicacion;
+     }
 }
